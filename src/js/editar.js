@@ -30,12 +30,13 @@ function novo() {
 const div = document.getElementById("botoes")
             const editar = document.createElement("button")
             
-            editar.innerText = "editar"
+            editar.innerText = "Editar"
             div.appendChild(editar)
             informacoes.forEach(elen => {
         if (elen.owner.id === localStorage.getItem("userId")) {
             console.log(elen.id)
             editar.id = `${elen.id}`
+            editar.classList ="header__editar"
 
             
             editar.addEventListener("click", async (event) => {

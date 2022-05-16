@@ -48,7 +48,7 @@ async function posts() {
         const div1 = document.createElement("div")
         const div2 = document.createElement("div")
         const b = document.createElement("b")
-        const p1 = document.createElement("p")
+        const p1 = document.createElement("textarea")
         
         section.classList="posts"
         img.src = `${elen.owner.avatarUrl}`

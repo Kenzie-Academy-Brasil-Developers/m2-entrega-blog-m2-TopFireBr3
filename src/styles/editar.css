@@ -62,12 +62,12 @@ main {
     align-items: center;
 }
 
-#header__editar {
+.header__editar {
     width: 97px;
     height: 30px;
     display: flex;
     justify-content: space-between;
-
+    cursor: pointer;
     border-radius: 5px;
     justify-content: center;
     color: white;

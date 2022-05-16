@@ -134,12 +134,11 @@ form {
 }
 
 #posts__text__text1 {
-
+    display: flex;
+    flex-wrap: wrap;
     height: 133px;
     width: 351px;
-    left: 438px;
-    top: 250px;
-    border-radius: nullpx;
+
 
 }
 
@@ -152,10 +151,12 @@ form {
 
 .posts__botoes__editar {
     color: #6495ED;
+    cursor: pointer;
 }
 
 .posts__botoes__apagar {
     color: #ED6464;
+    cursor: pointer;
 }
 
 .posts__botoes__data {
