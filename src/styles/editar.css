@@ -1,0 +1,102 @@
+textarea{
+    width: 594px;
+    height: 67px;
+    border: none;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+span {
+    color: gray;
+    padding: 17px 0px 0px 18px;
+}
+
+form {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    border: none;
+    align-items: center;
+}
+
+header {
+    background-color: #6495ED;
+    Height: 61px;
+    Width: 100%;
+    display: flex;
+    border: 1px solid black;
+}
+
+figure {
+    Height: 61px;
+}
+
+img {
+    height: 49px;
+    width: 46px;
+    left: 334px;
+    top: 231px;
+    border-radius: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    align-items: center;
+}
+
+/* header */
+#header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header__editar {
+    width: 97px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 5px;
+    justify-content: center;
+    color: white;
+    background-color: #EDBC64;
+    align-items: center;
+}
+
+#header__perfil {
+    color: white;
+    margin-left: 9px;
+}
+
+#header__imagem {
+    margin: 7px 0px 8px 14px
+}
+
+
+
+/* body  edicao*/
+
+
+#conteudo {
+
+    height: 97px;
+    display: flex;
+    
+    margin: 22px 0px 36px 0px;
+}
+
+
+
+

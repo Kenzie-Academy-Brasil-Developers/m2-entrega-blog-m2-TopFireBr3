@@ -1,0 +1,36 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    align-items: center;
+}
+
+main{
+    height: 100%;
+    background-color: #6495ED;
+    display: flex;
+    width: 376px;
+    height: 371px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+}
+input{
+    height: 42px;
+    width: 246px;
+}
+button{
+    background-color: #EDBC64;
+    border: none;
+    height: 42px;
+    width: 132px;
+}
+h3{
+    color: white;
+    font-size: 24px;
+}
