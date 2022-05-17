@@ -4,27 +4,18 @@ const main = document.createElement("main")
 body.append(main)
 
 main.innerHTML=`
-
+<form>
 <h3>Cadastro</h3>
-<input placeholder="Nome de usuário" name="nome" value="arroz6">
-<input type="gmail" placeholder="Gmail" name="arroz" value="arroz6@gmail.com.br">
-<input placeholder="Foto de perfil" name="foto" value="https://github.com/phmc99.png">
-<input type="senha" placeholder="Senha" name="senha" value="arroz6">
+<input placeholder="Nome de usuário" id="nome" >
+<input type="gmail" placeholder="Gmail" id="arroz" >
+<input placeholder="Foto de perfil" id="foto" >
+<input type="senha" placeholder="Senha" id="senha" >
 <button id="cadastrar">Cadastrar</button>
 <button id="login">Login</button>
+</form>
 `
-const gmail = document.getElementsByName("arroz")[0].value
-const senha = document.getElementsByName("senha")[0].value
-const foto = document.getElementsByName("foto")[0].value
-const nome = document.getElementsByName("nome")[0].value
+const formulario1 = document.querySelector("form")
 
-
-let data2 = {
-    "email": gmail,
-    "password": senha,
-    "username": nome,
-	"avatarUrl": foto
-}
 
 
 const cadastrar = document.getElementById("cadastrar")
@@ -33,7 +24,7 @@ const login = document.getElementById("login")
 
 cadastrar.addEventListener("click", async(event) => {
     event.preventDefault()
-    const arr = await Api.createUser(data2)
+    const arr = await Api.createUser({"username": formulario1[0].value, "email": formulario1[1].value, "avatarUrl": formulario1[2].value, "password": formulario1[3].value})
     console.log(arr)
     if (arr === true) {
         alert("Cadastro concluído")

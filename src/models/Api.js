@@ -16,11 +16,11 @@ class Api {
       {
         method: "POST", // Indica o tipo de requisição GET, POST, PATCH, DELETE
         headers: {
-          "Content-Type": "application/json", // Indica o tipo de dado da requisição
+          "Content-Type": "application/json" // Indica o tipo de dado da requisição
         },
         body: JSON.stringify(data), // Informando as informações do usuário
       })
-      .then((res) => res.json())
+      .then((res) =>  res.json())
       .then((res) => {
         if (res.status) {
           return false
@@ -166,16 +166,14 @@ class Api {
     
       }
       static async deletarPost(id) {
-        console.log(id)
+
         const response = await fetch(`https://api-blog-m2.herokuapp.com/post/${id}`, {
           method: "DELETE",
           headers: {
             "authorization": `Bearer ${localStorage.getItem("token")}`
           }
         })
-        // console.log(`${localStorage.getItem("idPost")}`)
-        // console.log(`${localStorage.getItem("token")}`)
-        
+      
         console.log("Deletou")
         return response
       }

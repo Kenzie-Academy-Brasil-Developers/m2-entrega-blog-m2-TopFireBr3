@@ -114,7 +114,8 @@ async function posts() {
                 const targetEvent = event.target.id
                 event.preventDefault()
                 console.log(targetEvent)
-                Api.deletarPost(targetEvent)
+                await Api.deletarPost(targetEvent)
+                location.reload()
             })
 
             button1.addEventListener("click", async (event) => {
@@ -152,7 +153,8 @@ adicionar.addEventListener("click", async (event) => {
     event.preventDefault()
     console.log(formulario[0].value)
     
-    Api.newPost({'content':formulario[0].value })
+    await Api.newPost({'content':formulario[0].value })
+    location.reload()
 })
 
 logout.addEventListener("click", async (event) => {
