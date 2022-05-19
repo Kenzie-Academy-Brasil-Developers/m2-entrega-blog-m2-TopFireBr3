@@ -10,7 +10,7 @@ main.innerHTML = `
 <form>
 <h3>Login</h3>
 <input type="gmail" placeholder="Gmail" name="gmail"  >
-<input type="senha" placeholder="Senha" name="senha" >
+<input type="password" placeholder="Senha" name="senha" >
 <button id="login">Login</button>
 <button id="cadastrar">Cadastrar</button>
 </form>
